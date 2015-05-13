@@ -47,29 +47,25 @@ function bison_menu_link(array $variables) {
 /**
  * Implements theme_form_element()
  * Moves description above form element.
-
+ */
 function bison_form_element($variables) {
   $element = $variables['element'];
-  if (isset($element['#field_name'])) {
-    switch ($element['#field_name']) {
-      default:
-        $variables['element']['#description_top'] = $variables['element']['#description'];
-        unset($variables['element']['#description']);
-        break;
-    }
+  if (isset($element['#field_name']) && isset($element['#description'])) {
+    $variables['element']['#description_top'] = $element['#description'];
+    unset($variables['element']['#description']);
   }
   return theme_form_element($variables);
-} */
+}
 
 /**
  * Implements theme_form_element_label()
  * Builds description_top element.
-
+ */
 function bison_form_element_label($variables) {
   $output = theme_form_element_label($variables);
   $element = $variables['element'];
   if (isset($element['#description_top'])) {
-    $output .= '<div class="description">' . $element['#description_top'] . "</div>\n";
+    $output .= '<div class="text-muted"><small>' . $element['#description_top'] . "</small></div>\n";
   }
   return $output;
-} */
+}

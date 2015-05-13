@@ -73,3 +73,7 @@ stylesheets[all][] = css/bison.css
 ; Method 2 uses BootstrapCDN, the only thing you might need to provide here
 ; is overrides to Bootstrap theme settings. Copy them here from the base theme
 ; to override.
+
+; Information added by stupiddingo on 2015-05-08
+version = "7.x-1.0"
+core = "7.x"

@@ -74,11 +74,11 @@
  */
 ?>
 
-<div class="utilities row">
+<div class="utilities row hidden-xs">
   <?php if (!empty($page['utilities_first']) || !empty($page['utilities_second'])): ?>
   <div class="container">
      <?php if (!empty($page['utilities_first'])): ?>
-     <div class="tagline hidden-xs col-sm-6">
+     <div class="tagline col-sm-6">
      <?php print render($page['utilities_first']); ?>
     </div>
     <?php endif; ?>
@@ -111,6 +111,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="//fishandgame.idaho.gov/search" title="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
 
     </div>
   </div>
@@ -152,7 +153,7 @@
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
 
-    <section<?php print $content_column_class; ?>>
+    <section id="main-section" <?php print $content_column_class; ?>>
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
       <?php endif; ?>
@@ -196,12 +197,16 @@
     <div>
   </div>
   <div class="row">
-  <div class="col-md-2"><?php print render($page['footer_1']); ?></div>
-  <div class="col-md-2"><?php print render($page['footer_2']); ?></div>
-  <div class="col-md-2"><?php print render($page['footer_3']); ?></div>
-  <div class="col-md-2"><?php print render($page['footer_4']); ?></div>
-  <div class="col-md-2"><?php print render($page['footer_5']); ?></div>
-  <div class="col-md-2"><?php print render($page['footer_6']); ?></div>
+  <div>
+  <div class="col-md-2 col-sm-4"><?php print render($page['footer_1']); ?></div>
+  <div class="col-md-2 col-sm-4"><?php print render($page['footer_2']); ?></div>
+  <div class="col-md-2 col-sm-4"><?php print render($page['footer_3']); ?></div>
+  </div>
+  <div>
+  <div class="col-md-2 col-sm-4"><?php print render($page['footer_4']); ?></div>
+  <div class="col-md-2 col-sm-4"><?php print render($page['footer_5']); ?></div>
+  <div class="col-md-2 col-sm-4"><?php print render($page['footer_6']); ?></div>
+  </div>
   </div>
   <div class="row">
     <div class="col-xs-12">
