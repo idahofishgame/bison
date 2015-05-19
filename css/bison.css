@@ -57,6 +57,7 @@ header#navbar{ background-color: #F5F5ED; }
 .navbar-nav { margin-top: 0; margin-bottom: 0; }
 aside .navbar-collapse { padding-right: 0; padding-left: 0; }
 .region-sidebar-first { margin-bottom: 20px; }
+.region-sidebar-second section { margin-top: 50px; }
 .navbar.container { padding-top: 0; }
 #navbar .logo img { height: 44px; }
 .navbar-btn { margin-top: 4px; }
