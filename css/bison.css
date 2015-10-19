@@ -14,7 +14,7 @@ body.toolbar-drawer {padding-top: 30px !important; }
 .utilities .nav > li > a { padding: 0 10px; }
 .utilities .nav > li > a:hover{ background:#000; border-radius: 0; }
 body.html { background:#3F4533; font-family: Roboto;}
-body.cke_editable { font-family: Roboto,Sans-Serif; font-size: 18px; line-height: 1.42857; color: #333; }
+body.cke_editable { font-family: Roboto,Sans-Serif; font-size: 17px; line-height: 1.65; color: #333; }
 
 /* Toolbar */
 #toolbar-user .logout { display: none; }
@@ -82,9 +82,9 @@ header .header-context { display: none; }
 
 /* Content */
 h1, h2, h3, h4, h5, h6, .brand, .dateblock { font-family: Georgia, Times, Serif; font-weight: 300;}
-.lead { font-size: 22px; }
 .submitted { font-style: normal; line-height: 4em; }
-.main-container { background: #FFF; font-family: Roboto; font-size: 18px; line-height: 1.65em; padding-bottom: 45px; }
+.main-container { background: #FFF; font-family: Roboto; font-size: 17px; line-height: 1.65em; padding-bottom: 45px; }
+.main-container p { margin-bottom: 32px; }
 .margin-top { margin-top:20px; }
 .margin-bottom { margin-top:20px; }
 kbd { background-color: #F9F9F9; color: #999; }
