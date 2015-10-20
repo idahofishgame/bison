@@ -69,3 +69,11 @@ function bison_form_element_label($variables) {
   }
   return $output;
 }
+
+/*
+ * Implements theme_preprocess_node()
+ * Simplifies submitted contents.
+ */
+function bison_preprocess_node(&$vars, $hook) {
+  $vars['submitted'] = 'By '.$vars['name'].' on '.date("l, M jS, Y", $vars['created']);
+}
