@@ -37,12 +37,9 @@ CKEDITOR.editorConfig = function(config) {
   /**
     * Sample extraCss code for the "marinelli" theme.
     */
-  if (Drupal.settings.ckeditor.theme == "marinelli") {
-    config.extraCss += "body{background:#FFF;text-align:left;font-size:0.8em;}";
+  if (Drupal.settings.ckeditor.theme == "bison") {
+    config.extraCss += "body{background:#FFF;text-align:left;font-size:16px;}";
     config.extraCss += "#primary ol, #primary ul{margin:10px 0 10px 25px;}";
-  }
-  if (Drupal.settings.ckeditor.theme == "newsflash") {
-    config.extraCss = "body{min-width:400px}";
   }
 
   /**
@@ -55,8 +52,8 @@ CKEDITOR.editorConfig = function(config) {
   /**
     * Sample bodyClass and BodyId for the "marinelli" theme.
     */
-  if (Drupal.settings.ckeditor.theme == "marinelli") {
-    config.bodyClass = 'singlepage';
+  if (Drupal.settings.ckeditor.theme == "bison") {
+    config.bodyClass = 'main-container';
     config.bodyId = 'primary';
   }
 }
