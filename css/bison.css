@@ -191,12 +191,6 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
   #page-header .region { background: rgb(130, 161, 175); background: rgba(130, 161, 175, 0.8); }
 }
 
-/* Mobile Bootstrap Overrides */
-@media (max-width: 767px) {
-  .pull-left, .pull-right { float: none !important; }
-  .pull-left img, .pull-right img { margin: 0 auto; }
-}
-
 /* Print */
 @media print {
   .utilities, #navfull, footer, #toolbar { display: none !important; }
