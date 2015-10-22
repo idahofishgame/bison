@@ -35,7 +35,7 @@ CKEDITOR.editorConfig = function(config) {
     */
   config.extraCss = '';
   /**
-    * Sample extraCss code for the "marinelli" theme.
+    * Sample extraCss code for the "bison" theme.
     */
   if (Drupal.settings.ckeditor.theme == "bison") {
     config.extraCss += "body{background:#FFF;text-align:left;font-size:16px;}";
@@ -50,7 +50,7 @@ CKEDITOR.editorConfig = function(config) {
   config.bodyClass = '';
   config.bodyId = '';
   /**
-    * Sample bodyClass and BodyId for the "marinelli" theme.
+    * Sample bodyClass and BodyId for the "bison" theme.
     */
   if (Drupal.settings.ckeditor.theme == "bison") {
     config.bodyClass = 'main-container';
