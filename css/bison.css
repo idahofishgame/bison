@@ -132,6 +132,8 @@ section img { max-width: 100%; height: auto; }
 .webform-container-inline label { margin-top: 0; font-weight: normal; display: inline-block; }
 .webform-container-inline input { display: inline-block; width: 60%; }
 .webform-component th { font-weight: normal; }
+label.option { font-weight: 300px; }
+span.required { color: #c7254e; }
 
 /* Footer styles */
 footer.container { background-color: #EBEAD9; border-top: 1px solid #D3CFB9; margin-top: 0; }
@@ -183,6 +185,8 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
   #idfg-terms li a { display: inline; }
   #idfg-terms li a:hover { background: transparent; }
   .navbar-mobile { display: none !important; }
+  .pull-left, .pull-right { float: none !important; }
+  .pull-left img, .pull-right img { margin: 0 auto; }
 
   /* Header Context */
   #page-header { display: block; margin-left: -15px; margin-right: -15px; background: #82A1AF center center no-repeat; }
