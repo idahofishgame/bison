@@ -136,7 +136,7 @@ section img { max-width: 100%; height: auto; }
 .webform-container-inline input { display: inline-block; width: 60%; }
 .webform-component th { font-weight: normal; }
 label.option { font-weight: normal; }
-span.form-required { color: #c7254e; }
+span.form-required, span.name-required-component-marker { color: #c7254e; }
 .form-pad-last .form-type-radio:last-of-type { padding-top: 10px;}
 
 /* Bootstrap call-outs http://cpratt.co/twitter-bootstrap-callout-css-styles */
