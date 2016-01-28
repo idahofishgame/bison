@@ -1,28 +1,13 @@
 /**
- * For non-drupal installations the counterpart of this file is found at
+ * For non-drupal installations the counterpart of this file is
  * https://idfg.idaho.gov/sites/all/themes/bison/js/login-menu.js
- * Use this file to load both dynamic login and menu information.
- * For a live example of this script visit
- * http://fishandgame.idaho.gov/ifwis/style.
  */
 (function ($) {
   Drupal.behaviors.bison = {
     attach: function (context, settings) {
-      updateLoginLinks();
       getUser();
     }
   }
-
-  // Add a return URL to the login URL if not present for post-login redirect.
-  function updateLoginLinks() {
-    var loginElements = $('.accounts-login-link a');
-    for (var i = 0; i < loginElements.length; i++) {
-      if ($(loginElements[i]).attr('href').toLowerCase().indexOf('returnurl=') == -1) {
-        $(loginElements[i]).attr('href', $(loginElements[i]).attr('href') + '?returnurl=' + window.location.href);
-      }
-    }
-  }
-
   // Loads the current user from IDFG API endpoint.
   function getUser() {
     // API request for the current user.
@@ -35,15 +20,18 @@
           if (data.user) {
             updateLoginText(data.user);
           } else {
+            $('.accounts-login-link a').each(function()
+              {
+                this.href = this.href.replace(/\/accounts/, '/accounts/user/login');
+              });
             updateLoginText("Login");
           }
         }
       }
       , type: 'GET'
-      , url: 'https://idfg.idaho.gov/accounts/user/state'
+      , url: Drupal.settings.basePath + 'user/state'
     });
   }
-
   // Convenience function which animates the login text field to a new value,
   // if not already set to that value.
   function updateLoginText(newText) {
