@@ -75,5 +75,20 @@ function bison_form_element_label($variables) {
  * Simplifies submitted contents.
  */
 function bison_preprocess_node(&$vars, $hook) {
-  $vars['submitted'] = 'By '.$vars['name'].' on '.date("l, M jS, Y", $vars['created']);
+  $vars['submitted'] = 'By '.$vars['name'].' on '.date("l, M jS, Y g:ia T", $vars['created']);
+}
+
+/**
+ * Implements template_preprocess_field().
+ */
+function bison_preprocess_field(&$vars, $hook) {
+  // Add line breaks to plain text textareas.
+  if (
+    // Make sure this is a text_long field type.
+    $vars['element']['#field_type'] == 'text_long'
+    // Check that the field's format is set to null, which equates to plain_text.
+    && $vars['element']['#items'][0]['format'] == null
+  ) {
+    $vars['items'][0]['#markup'] = nl2br($vars['items'][0]['#markup']);
+  }
 }
