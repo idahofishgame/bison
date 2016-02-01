@@ -21,10 +21,10 @@ body.cke_editable { font-family: Roboto,Sans-Serif; font-size: 16px; line-height
 #toolbar-user .logout { display: none; }
 
 /* Utilities */
-#idfg-site-search.form-group { margin-bottom: 0; position: relative;}
-#idfg-site-search input[type=text] { padding: 2px 20px 2px 8px; height: 22px; margin-top: 4px; line-height: 20px; color: #333; }
-#idfg-site-search .glyphicon { position: absolute; right: 2px; top: 7px; color: #999;}
-#idfg-site-search input[type=submit] { display: none; }
+#idfg-site-search.form-inline { margin: 0; padding: 0; position: relative;}
+#idfg-site-search input[type=text] { padding: 0 22px 0 4px; height: 22px; line-height: 20px; color: #999; }
+/*#idfg-site-search .glyphicon { position: absolute; right: 2px; top: 7px; color: #999;}*/
+#idfg-site-search button { color: #999; position: relative; margin-left: -34px; margin-top: -3px; background: transparent; }
 #block-menu-menu-utilities ul.nav li { color: #c2c2c2;margin: 0; padding: 0; float: right; }
 
 /* Header */
