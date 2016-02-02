@@ -111,7 +111,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="//fishandgame.idaho.gov/search" title="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+      <a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/search" title="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
 
     </div>
   </div>
