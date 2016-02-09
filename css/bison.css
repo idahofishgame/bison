@@ -66,15 +66,15 @@ aside .navbar-collapse { padding-right: 0; padding-left: 0; }
 .navbar-btn { margin-top: 4px; }
 
 /* Context Navigation */
-.navbar-context { margin-left: -15px; margin-right: -15px; color: #eae8d8; font-size: 13px; padding-left: 0; background-color: #48593E; }
+.navbar-context { margin-left: -15px; margin-right: -15px; color: #eae8d8; font-size: 13px; padding-left: 0; background-color: #999; }
 .navbar-context .navbar-toggle { margin: 20px 10px 0 10px; padding: 0; float: none; }
 .navbar-context .brand h2 { font-size: 24px; margin: 0; }
 .navbar-context .brand { display: inline-block; }
 .navbar-context li { list-style: none; }
-.navbar-context a, .navbar-context button { color: #eae8d8; }
+.navbar-context a, .navbar-context button { color: #EAE8D8; }
 .navbar-context .navbar-top { padding: 0 0 10px 15px; }
-.navbar-context .navbar-top:hover { background-color: #EEE; border-left: 2px solid #48593E; padding-left: 13px; }
-.navbar-context .navbar-top:hover a, .navbar-context .navbar-top:hover button { color: #48593E; }
+.navbar-context .navbar-top:hover { background-color: #EEE; border-left: 2px solid #333; padding-left: 13px; }
+.navbar-context .navbar-top:hover a, .navbar-context .navbar-top:hover button { color: #333; }
 header .header-context { display: none; }
 .navbar-context .nav>li>a {
   display: block;
@@ -87,8 +87,8 @@ header .header-context { display: none; }
   font-weight: 300;
 }
 .navbar-context .nav>li>a:focus,.navbar-context .nav>li>a:hover{
-  color:#48593E;
-  border-left:2px solid #48593E;
+  color:#333;
+  border-left:2px solid #333;
   padding-left: 13px;
   background-color: #EEE;
   font-weight: 700;
@@ -97,8 +97,8 @@ header .header-context { display: none; }
   padding-left: 23px;
 }
 .navbar-context .nav>.active:focus>a, .navbar-context .nav>.active:hover>a, .navbar-context .nav>.active>a {
-  color:#48593E;
-  border-left:3px solid #48593E;
+  color:#333;
+  border-left:3px solid #333;
   padding-left: 12px;
   background-color: #EEE;
   font-weight: 700;
@@ -237,8 +237,8 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
   .navbar-mobile { display: none !important; }
   .description { color: #777; font-size: 80%; }
   /* Header Context */
-  #page-header { display: block; margin-left: -15px; margin-right: -15px; margin-bottom: 20px; background: #48593E center center no-repeat; }
-  #page-header .region { background: #48593E; background: rgba(72, 89, 62, 0.8); }
+  #page-header { display: block; margin-left: -15px; margin-right: -15px; margin-bottom: 20px; background: #999 center center no-repeat; }
+  #page-header .region { background: #999; background: rgba(72, 89, 62, 0.8); }
 }
 
 /* Print */
