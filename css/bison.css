@@ -205,7 +205,7 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
 
 /* Desktop */
 @media (min-width: 768px) {
-  h1.page-header { margin-top: 30px; }
+  #page-header { margin-top: 30px; }
   h2.header-context a { color: #fff; }
   h2.header-context { margin-bottom: 30px; }
   h2.header-context small, aside .navbar-context h2 small { color: #eae8d8; }
