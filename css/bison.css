@@ -66,40 +66,44 @@ aside .navbar-collapse { padding-right: 0; padding-left: 0; }
 .navbar-btn { margin-top: 4px; }
 
 /* Context Navigation */
-.navbar-context { border-bottom: 1px solid #d3cfb9; margin-left: -15px; margin-right: -15px; color: #eae8d8; font-size: 13px; padding-left: 0; }
+.navbar-context { margin-left: -15px; margin-right: -15px; color: #eae8d8; font-size: 13px; padding-left: 0; }
 .navbar-context .navbar-toggle { margin: 20px 10px 0 10px; padding: 0; float: none; }
-.navbar-context .brand h2 { font-size: 13px; padding-left: 15px; margin-top: 10px; margin-bottom: 16px; }
+.navbar-context .brand h2 { font-size: 15px; margin-top: 10px; margin-bottom: 16px; font-family: Roboto, sans-serif; font-weight: 700; }
 .navbar-context .brand { display: inline-block; }
 .navbar-context li { list-style: none; }
-.navbar-context a.brand:hover, .navbar-context button:hover { color: #48593E; background: transparent; }
-.navbar-context a, .navbar-context button { color: #fff; }
+.navbar-context a, .navbar-context button { color: #eae8d8; }
+.navbar-context .navbar-top { padding: 10px 10px 10px 15px; }
+.navbar-context .navbar-top:hover { background-color: #EEE; border-left: 2px solid #48593E; padding-left: 13px; }
+.navbar-context .navbar-top:hover a, .navbar-context .navbar-top:hover button { color: #48593E; }
 header .header-context { display: none; }
 .navbar-context .nav>li>a {
   display: block;
-  padding: 4px 10px;
+  padding: 4px 15px;
   font-weight: 500;
 }
 .navbar-context .nav .nav>li>a {
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-left: 20px;
+  padding-left: 25px;
   font-size: 12px;
   font-weight: 400;
 }
 .navbar-context .nav>li>a:focus,.navbar-context .nav>li>a:hover{
   color:#48593E;
-  border-left:1px solid #48593E;
-  padding-left: 9px;
+  border-left:2px solid #48593E;
+  padding-left: 13px;
   background-color: #EEE;
+  font-weight: 700;
 }
 .navbar-context .nav .nav>li>a:focus,.navbar-context .nav .nav>li>a:hover{
-  padding-left: 19px;
+  padding-left: 23px;
 }
 .navbar-context .nav>.active:focus>a, .navbar-context .nav>.active:hover>a, .navbar-context .nav>.active>a {
-    color:#48593E;
-    border-left:2px solid #48593E;
-    padding-left: 8px;
-    background-color: #EEE;
+  color:#48593E;
+  border-left:3px solid #48593E;
+  padding-left: 12px;
+  background-color: #EEE;
+  font-weight: 700;
 }
 
 /* Content */
@@ -209,15 +213,14 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
   h2.header-context small, aside .navbar-context h2 small { color: #eae8d8; }
   .nudge-right { float: right !important;  }
   .nudge-left { float: left !important; }
-  .navbar-context { background-color: transparent !important; margin-left: -5px; margin-right: 0; }
+  .navbar-context { background-color: transparent !important; margin-left: -15px; margin-right: 0; }
   .navbar-context a, .navbar-context button { color: #767676; }
   #idfgFooterImageLinks, .region-branding { display: block; }
   .navbar-context li { border-top: none;}
   .navbar-context { border-bottom: none;  padding-top: 80px;}
-  .navbar-context .brand h2 { padding: 0; font-family: Roboto, sans-serif; font-weight: bold; margin: 0 0 0 -5px; }
-  .navbar-context .brand { padding: 10px; display: block; }
-  .navbar-context a.brand:hover { background: #EEE; border-left: 1px solid #48593E; padding-left: 9px; }
-  .navbar-context li a:hover { text-decoration: underline; }
+  .navbar-context .brand h2 { padding: 0; font-family: Roboto, sans-serif; font-weight: bold; margin: 0; }
+  .navbar-context a.brand:hover { text-decoration: none; }
+  .navbar-context li a:hover { text-decoration: none; }
   header .header-context { display: block; }
   #navfull nav  { margin-left: 0; }
   #navbar .logo img { height: auto; }
