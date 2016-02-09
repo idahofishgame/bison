@@ -153,7 +153,6 @@ table { background-color: #fff; }
 .field-type-taxonomy-term-reference, .field-type-taxonomy-term-reference .field-item{ display: inline-block; }
 .field-type-taxonomy-term-reference a { margin: 4px 14px 0 0; color: #777; }
 blockquote { margin-left: 2px; padding-left: 10px; border-left: 4px solid #d3cfb9; color: #999; }
-section img { max-width: 100%; height: auto; }
 
 /* Webform */
 .webform-component { margin-top: 30px; }
