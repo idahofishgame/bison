@@ -32,6 +32,10 @@ function getMainMenu() {
 
   // Loads the current user from IDFG API endpoint.
   function getUser() {
+    var path = 'https://idfg.idaho.gov/accounts';
+    if (location.host == 'fishandgame.idaho.gov') {
+      path = 'https://fishandgame.idaho.gov/ifwis/accounts-net';
+    }
     // API request for the current user.
     $.ajax({
       cache: false
@@ -51,7 +55,7 @@ function getMainMenu() {
         }
       }
       , type: 'GET'
-      , url: Drupal.settings.basePath + 'user/state'
+      , url: path + '/user/state'
     });
   }
   // Convenience function which animates the login text field to a new value,
