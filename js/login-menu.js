@@ -22,7 +22,6 @@ function getMainMenu() {
       if (requestStatus === 'success') {
         $('#block-idfg-components-menu').replaceWith(data);
         getUser();
-        updateLoginLinks();
       }
     }
     , type: 'GET'
