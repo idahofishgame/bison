@@ -68,25 +68,23 @@ aside .navbar-collapse { padding-right: 0; padding-left: 0; }
 /* Context Navigation */
 .navbar-context { margin-left: -15px; margin-right: -15px; color: #eae8d8; font-size: 13px; padding-left: 0; }
 .navbar-context .navbar-toggle { margin: 20px 10px 0 10px; padding: 0; float: none; }
-.navbar-context .brand h2 { font-size: 15px; margin-top: 10px; margin-bottom: 16px; font-family: Roboto, sans-serif; font-weight: 700; }
+.navbar-context .brand h2 { font-size: 24px; margin: 0; }
 .navbar-context .brand { display: inline-block; }
 .navbar-context li { list-style: none; }
 .navbar-context a, .navbar-context button { color: #eae8d8; }
-.navbar-context .navbar-top { padding: 10px 10px 10px 15px; }
+.navbar-context .navbar-top { padding: 0 0 10px 15px; }
 .navbar-context .navbar-top:hover { background-color: #EEE; border-left: 2px solid #48593E; padding-left: 13px; }
 .navbar-context .navbar-top:hover a, .navbar-context .navbar-top:hover button { color: #48593E; }
 header .header-context { display: none; }
 .navbar-context .nav>li>a {
   display: block;
-  padding: 4px 15px;
-  font-weight: 500;
+  padding: 6px 15px;
+  font-weight: 300;
 }
 .navbar-context .nav .nav>li>a {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 25px;
+  padding: 3px 15px 3px 25px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
 }
 .navbar-context .nav>li>a:focus,.navbar-context .nav>li>a:hover{
   color:#48593E;
@@ -217,8 +215,9 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
   .navbar-context a, .navbar-context button { color: #767676; }
   #idfgFooterImageLinks, .region-branding { display: block; }
   .navbar-context li { border-top: none;}
+  .navbar-context .navbar-top { padding: 6px 6px 6px 15px; display: block; }
   .navbar-context { border-bottom: none;  padding-top: 80px;}
-  .navbar-context .brand h2 { padding: 0; font-family: Roboto, sans-serif; font-weight: bold; margin: 0; }
+  .navbar-context .brand h2 { padding: 0; font-family: Roboto, sans-serif; font-weight: bold; margin: 0; font-size: 13px; }
   .navbar-context a.brand:hover { text-decoration: none; }
   .navbar-context li a:hover { text-decoration: none; }
   header .header-context { display: block; }
