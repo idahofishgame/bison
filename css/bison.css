@@ -41,22 +41,23 @@ header#navbar{ background-color: #f5f5ed; }
 #navfull .container { background: #ebead9; }
 #navfull a:hover { text-decoration: underline; }
 .navbar-default .navbar-brand { display: none; }
-.navbar-primary .navbar-nav a { color: #414634; font-weight: bold; }
+.navbar-primary .navbar-nav a { color: #555; }
 .navbar-primary .navbar-nav > li a { border-radius: 0; }
-.navbar-primary .navbar-nav > li > ul > li a { border: none; background-color: inherit; font-weight: normal; padding: 0 0 0 4px; margin: 0; border-radius: 0; line-height: 1.2; }
+.navbar-primary .navbar-nav > li > ul > li a { border: none; background-color: inherit; padding: 0 0 0 4px; margin: 0; border-radius: 0; line-height: 1.2; }
 .navbar-primary .navbar-nav > li > ul > li a:before { content: '\25AA'; }
-.navbar-primary .navbar-nav > li > ul > li .menu-category { background: #d3cfb9; font-weight: bold; padding-left: 2px; margin-top: 2px }
+.navbar-primary .navbar-nav > li > ul > li .menu-category { background: #d3cfb9; font-weight: 700; padding-left: 2px; margin-top: 2px }
 .navbar-primary .navbar-nav > li > ul > li .menu-header { padding-left: 2px; margin-top: 2px; font-size: 1.2em;}
 .navbar-primary .navbar-nav > li > ul > li .menu-category:before, .navbar-primary .navbar-nav > li > ul > li .menu-header:before { content: ''; }
-.navbar-primary .navbar-nav > li a:hover, .navbar-primary .navbar-nav > li > ul > li a.menu-category:hover { background-color: #3f4533; color: #fff; }
+.navbar-primary .navbar-nav > li a:hover, .navbar-primary .navbar-nav > li > ul > li a.menu-category:hover { background-color: #555; color: #fff; }
 .navbar-primary .navbar-nav .open > a { background-color: #9aa08b; }
-.navbar-default .navbar-toggle .icon-bar { background-color: #3f4533; height: 3px; border-radius: 2px;}
+.navbar-primary li a.dropdown-toggle { font-weight: 700; }
+.navbar-default .navbar-toggle .icon-bar { background-color: #555; height: 3px; border-radius: 2px;}
 .navbar-default .navbar-toggle { background-color: transparent; border: none; margin-top: 10px; }
 .navbar-default .navbar-toggle:hover { background-color: transparent; }
-.navbar-search { float: right; padding-top: 14px; color: #3f4533; }
+.navbar-search { float: right; padding-top: 14px; color: #555; }
 .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header { padding: 0 3px 0 6px; }
-.topnav .nav > li { border-top:1px solid #6a705a; }
-.topnav .navbar-collapse { border-width: 2px medium 5px; border-style: solid none; border-color: #6a705a; }
+.topnav .nav > li { border-top:1px solid #777; }
+.topnav .navbar-collapse { border-width: 2px medium 5px; border-style: solid none; border-color: #777; }
 .navbar-nav { margin-top: 0; margin-bottom: 0; }
 aside .navbar-collapse { padding-right: 0; padding-left: 0; }
 .region-sidebar-first { margin-bottom: 20px; }
@@ -71,9 +72,9 @@ aside .navbar-collapse { padding-right: 0; padding-left: 0; }
 .navbar-context .brand h2 { font-size: 24px; margin: 0; }
 .navbar-context .brand { display: inline-block; }
 .navbar-context li { list-style: none; }
-.navbar-context a, .navbar-context button { color: #EAE8D8; }
+.navbar-context a, .navbar-context button { color: #eae8d8; }
 .navbar-context .navbar-top { padding: 0 0 10px 15px; }
-.navbar-context .navbar-top:hover { background-color: #EEE; border-left: 2px solid #333; padding-left: 13px; }
+.navbar-context .navbar-top:hover { background-color: #eee; border-left: 2px solid #333; padding-left: 13px; }
 .navbar-context .navbar-top:hover a, .navbar-context .navbar-top:hover button { color: #333; }
 header .header-context { display: none; }
 .navbar-context .nav>li>a {
@@ -90,7 +91,7 @@ header .header-context { display: none; }
   color:#333;
   border-left:2px solid #333;
   padding-left: 13px;
-  background-color: #EEE;
+  background-color: #eee;
   font-weight: 700;
 }
 .navbar-context .nav .nav>li>a:focus,.navbar-context .nav .nav>li>a:hover{
@@ -100,7 +101,7 @@ header .header-context { display: none; }
   color:#333;
   border-left:3px solid #333;
   padding-left: 12px;
-  background-color: #EEE;
+  background-color: #eee;
   font-weight: 700;
 }
 
@@ -112,7 +113,7 @@ h1, h2, h3, h4, h5, h6, .brand, .dateblock { font-family: Georgia, Times, Serif;
 .margin-top { margin-top:20px; }
 .margin-bottom { margin-top:20px; }
 kbd { background-color: #f9f9f9; color: #999; }
-.ui-widget-content a  { color: #428BCA; }
+.ui-widget-content a  { color: #428bca; }
 .ui-widget-content a:hover { color:#2a699b; text-decoration: underline; }
 h1.page-header { margin-top: 10px; }
 .btn { margin-top: 2px; margin-bottom: 2px; }
