@@ -23,7 +23,7 @@ function bison_menu_link__main_menu(array $variables) {
     elseif ((!empty($element['#original_link']['depth'])) && ($element['#original_link']['depth'] == 1)) {
       // Add our own wrapper.
       unset($element['#below']['#theme_wrappers']);
-      $sub_menu = '<ul class="dropdown-menu columns">' . drupal_render($element['#below']) . '</ul>';
+      $sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
       // Generate as standard dropdown.
       // $element['#title'] .= ' <span class="caret"></span>';  // Hide dropdown.
       $element['#attributes']['class'][] = 'dropdown';
@@ -38,10 +38,10 @@ function bison_menu_link__main_menu(array $variables) {
       // Add our own wrapper.
       unset($element['#below']['#theme_wrappers']);
       $sub_menu = drupal_render($element['#below']);
-      if ($element['#original_link']['depth'] == 2) {
-        $element['#localized_options']['attributes']['class'][] = 'menu-category';
-      }
     }
+  }
+  if ($element['#original_link']['depth'] == 2) {
+    $element['#localized_options']['attributes']['class'][] = 'menu-category';
   }
   // On primary navigation menu, class 'active' is not set on active menu item.
   // @see https://drupal.org/node/1896674
