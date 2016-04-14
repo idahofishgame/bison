@@ -6,10 +6,11 @@
  */
  
 /**
- * Implements theme_menu_link()
- * Overrides addition caret to dropdown added in bootstrap_menu_link.
+ * Implements theme_menu_link__main_menu()
+ * Overrides addition caret to dropdown added in bootstrap_menu_link
+ * and treats level 2 as menu-category style displaying n-levels.
  */
-function bison_menu_link(array $variables) {
+function bison_menu_link__main_menu(array $variables) {
   $element = $variables['element'];
   $sub_menu = '';
 
@@ -22,7 +23,7 @@ function bison_menu_link(array $variables) {
     elseif ((!empty($element['#original_link']['depth'])) && ($element['#original_link']['depth'] == 1)) {
       // Add our own wrapper.
       unset($element['#below']['#theme_wrappers']);
-      $sub_menu = '<ul class="dropdown-menu">' . drupal_render($element['#below']) . '</ul>';
+      $sub_menu = '<ul class="dropdown-menu columns">' . drupal_render($element['#below']) . '</ul>';
       // Generate as standard dropdown.
       // $element['#title'] .= ' <span class="caret"></span>';  // Hide dropdown.
       $element['#attributes']['class'][] = 'dropdown';
@@ -33,6 +34,13 @@ function bison_menu_link(array $variables) {
       $element['#localized_options']['attributes']['data-target'] = '#';
       $element['#localized_options']['attributes']['class'][] = 'dropdown-toggle';
       $element['#localized_options']['attributes']['data-toggle'] = 'dropdown';
+    } elseif ((!empty($element['#original_link']['depth'])) && $element['#original_link']['depth'] > 1) {
+      // Add our own wrapper.
+      unset($element['#below']['#theme_wrappers']);
+      $sub_menu = drupal_render($element['#below']);
+      if ($element['#original_link']['depth'] == 2) {
+        $element['#localized_options']['attributes']['class'][] = 'menu-category';
+      }
     }
   }
   // On primary navigation menu, class 'active' is not set on active menu item.
