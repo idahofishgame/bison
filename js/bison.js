@@ -6,6 +6,9 @@
   Drupal.behaviors.bison = {
     attach: function (context, settings) {
       getUser();
+      $("#context-menu-dropdown").click( function() {
+        $("#context-menu-dropdown .glyphicon").toggleClass("glyphicon-chevron-down glyphicon-chevron-up");
+      });
     }
   }
   // Loads the current user from IDFG API endpoint.

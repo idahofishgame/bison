@@ -4,8 +4,10 @@
  */
 $(document).ready(function () {
   getMainMenu();
-  updateLoginLinks();
   getUser();
+  $("#context-menu-dropdown").click( function() {
+    $("#context-menu-dropdown .glyphicon").toggleClass("glyphicon-chevron-down glyphicon-chevron-up");
+  });
 });
 
 // Loads the main menu from IDFG API endpoint
@@ -20,7 +22,6 @@ function getMainMenu() {
       if (requestStatus === 'success') {
         $('#block-idfg-components-menu').replaceWith(data);
         getUser();
-        updateLoginLinks();
       }
     }
     , type: 'GET'
@@ -28,19 +29,13 @@ function getMainMenu() {
   });
 }
 
-// add a return URL to the login URL if not present for post-login redirect
-function updateLoginLinks() {
-  var loginElements = $('.accounts-login-link a');
-  for (var i = 0; i < loginElements.length; i++) {
-    if ($(loginElements[i]).attr('href').indexOf('?returnurl=') < 0) {
-      $(loginElements[i]).attr('href', $(loginElements[i]).attr('href') + '?returnurl=' + window.location.href);
-    }
-  }
-}
-
-// Loads the current user from IDFG API endpoint
+// Loads the current user from IDFG API endpoint.
 function getUser() {
-  // API request for the current user
+  var path = 'https://idfg.idaho.gov/accounts';
+  if (location.host == 'fishandgame.idaho.gov') {
+    path = 'https://fishandgame.idaho.gov/ifwis/accounts-net';
+  }
+  // API request for the current user.
   $.ajax({
     cache: false
     , crossDomain: true
@@ -50,16 +45,21 @@ function getUser() {
         if (data.user) {
           updateLoginText(data.user);
         } else {
+          $('.accounts-login-link a').each(function()
+            {
+              this.href = this.href.replace(/\/accounts/, '/accounts/user/login');
+            });
           updateLoginText("Login");
         }
       }
     }
     , type: 'GET'
-    , url: 'https://idfg.idaho.gov/accounts/user/state'
+    , url: path + '/user/state'
   });
 }
 
-// Convenience function which animates the login text field to a new value, if not already set to that value
+// Convenience function which animates the login text field to a new value,
+// if not already set to that value.
 function updateLoginText(newText) {
   var loginElements = $('.accounts-login-link');
   for (var i = 0; i < loginElements.length; i++) {
