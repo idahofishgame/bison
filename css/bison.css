@@ -242,7 +242,7 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
   .description { color: #777; font-size: 80%; }
   .navbar-context { color: #555; }
   /* Header Context */
-  #page-header-context { display: block; margin-left: -15px; margin-right: -15px; margin-bottom: 20px; background: #999 center center no-repeat; }
+  #page-header-context { display: block; margin-left: -15px; margin-right: -15px; margin-bottom: 20px; background: #999 center center no-repeat; background-size: cover; }
   #page-header-context .region { background: rgba(153, 153, 153, 0.8); }
 }
 
