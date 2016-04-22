@@ -49,7 +49,6 @@ header#navbar{ background-color: #f5f5ed; }
 .navbar-primary .navbar-nav > li > ul > li .menu-category:before, .navbar-primary .navbar-nav > li > ul > li .menu-header:before { content: ''; }
 .navbar-primary .navbar-nav > li a:hover, .navbar-primary .navbar-nav > li > ul > li a.menu-category:hover { background-color: #555; color: #fff; }
 .navbar-primary .navbar-nav .open > a { background-color: #9aa08b; }
-.navbar-primary li a.dropdown-toggle { font-weight: 700; }
 .navbar-default .navbar-toggle .icon-bar { background-color: #555; height: 3px; border-radius: 2px;}
 .navbar-default .navbar-toggle { background-color: transparent; border: none; margin-top: 10px; }
 .navbar-default .navbar-toggle:hover { background-color: transparent; }
@@ -97,7 +96,6 @@ kbd { background-color: #f9f9f9; color: #999; }
 .ui-widget-content a  { color: #428bca; }
 .ui-widget-content a:hover { color:#2a699b; text-decoration: underline; }
 h1.page-header { margin-top: 10px; }
-.btn { margin-top: 2px; margin-bottom: 2px; }
 .views-bootstrap-thumbnail-plugin-style .thumbnail .caption h3 { margin: 2px 0; font-size: 1.3em; }
 .word-wrap {white-space: -moz-pre-wrap !important; white-space: -pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap; word-wrap: break-word; }
 table { background-color: #fff; }
@@ -212,7 +210,7 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
   .navbar-nav > li > .dropdown-menu { margin-left: 3px; margin-top: -3px; border-color: #6a705a; }
   .navbar-nav > li:nth-of-type(9) > .dropdown-menu { margin-left: -220px; }
   .navbar-nav > li:nth-of-type(8) > .dropdown-menu { margin-left: -60px; }
-  .navbar-primary .navbar-nav > li a { border: 1px solid transparent; padding: 5px 6px; margin: 2px 3px; }
+  .navbar-primary .navbar-nav > li a { border: 1px solid transparent; padding: 5px 4px; margin: 2px 3px; }
   .navbar-primary .navbar-nav > li a:hover, .navbar-primary .navbar-nav > li > ul > li a.menu-category:hover { background-color: transparent; color: #414634; }
   .navbar-primary .navbar-nav > li a:hover { border-color: #6a705a; background-color: #ebead9; border-bottom: none; z-index: 1001;}
   #idfg-terms li { display: inline; padding-left: 14px;  }
