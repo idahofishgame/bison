@@ -104,6 +104,8 @@ table { background-color: #fff; }
 .nudge-right, .nudge-left { text-align: center; }
 .description { font-size: 80%; }
 .text-muted, .description, .submitted { color: #767676; }
+.posted-in { line-height: 1.2; font-size: 70%; text-transform: lowercase; text-align: right; width: 80%; }
+.posted-in a { color: #bbb; margin-right: 4px; font-weight: 100; }
 
 /* Attribution */
 .attribution:before { content: '\2014 \00A0'; }
@@ -187,7 +189,7 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
 /* Desktop */
 @media (min-width: 768px) {
   h2.header-context a { color: #fff; }
-  h2.header-context { margin-bottom: 30px; }
+  h2.header-context { margin-bottom: 15px; margin-top: 10px; }
   h2.header-context small, aside .navbar-context h2 small { color: #eae8d8; }
   .nudge-right { float: right !important;  }
   .nudge-left { float: left !important; }
