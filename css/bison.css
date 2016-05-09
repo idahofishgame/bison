@@ -101,8 +101,8 @@ table { background-color: #fff; }
 .nudge-right, .nudge-left { text-align: center; }
 .description { font-size: 80%; }
 .text-muted, .description, .submitted { color: #767676; }
-.posted-in a { color: #767676; margin-left: 10px; font-size: 80%; float: right; }
-.posted-in div { line-height: 1.2em; display: inline; }
+.posted-in a { color: #767676; margin-right: 5px; margin-left: 5px; font-size: 80%; }
+.posted-in div { line-height: 1.2em; display: inline; color: #767676; }
 
 /* Attribution */
 .attribution:before { content: '\2014 \00A0'; }
