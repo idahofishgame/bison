@@ -74,7 +74,7 @@
  */
 ?>
 
-<div class="utilities row hidden-xs">
+<div class="utilities hidden-xs">
   <?php if (!empty($page['utilities_first']) || !empty($page['utilities_second'])): ?>
   <div class="container">
      <?php if (!empty($page['utilities_first'])): ?>
@@ -116,7 +116,7 @@
     </div>
   </div>
 </header>
-<div id="navfull" class="row">
+<div id="navfull">
   <div class="container topnav">
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-primary navbar-collapse collapse">
@@ -185,7 +185,7 @@
 
   </div>
 </div>
-<div id="footer_context" class="row">
+<div id="footer_context">
   <div class="col-xs-12">
     <?php print render($page['footer_context']); ?>
     <div>
