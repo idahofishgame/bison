@@ -116,8 +116,8 @@
     </div>
   </div>
 </header>
-<div id="navfull">
-  <div class="container topnav">
+<div id="navfull container">
+  <div class="row topnav">
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-primary navbar-collapse collapse">
         <nav role="navigation">
@@ -185,12 +185,12 @@
 
   </div>
 </div>
-<div id="footer_context">
-  <div class="col-xs-12">
+<div id="footer_context" class="container">
+  <div class="row">
     <?php print render($page['footer_context']); ?>
     <div>
 </div>
-<footer class="footer container">
+<footer class="footer">
   <div class="row">
     <div class="col-xs-12">
       <?php print render($page['footer_top']); ?>

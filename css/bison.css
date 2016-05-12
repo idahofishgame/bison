@@ -164,8 +164,8 @@ span.form-required, span.name-required-component-marker { color: #c7254e; }
 .bs-callout-info h4 { color: #5bc0de; }
 
 /* Footer styles */
-footer.container { background-color: #ebead9; border-top: 1px solid #d3cfb9; margin-top: 0; }
-footer.container .region { margin: 0 4px; font-size: 13px; }
+footer.footer { background-color: #ebead9; border-top: 1px solid #d3cfb9; margin-top: 0; }
+footer.footer .region { margin: 0 4px; font-size: 13px; }
 footer { color: #a7a7a7; }
 footer a { color: #7d7d7d; }
 footer a:hover { color: #333; text-decoration: underline; }
