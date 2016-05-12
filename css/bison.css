@@ -15,7 +15,7 @@
 .utilities .nav > li > a { padding: 0 10px; }
 .utilities .nav > li > a:hover{ background:#000; border-radius: 0; }
 body.html { background:#3f4533; font-family: Roboto; }
-body.cke_editable { font-family: Roboto,Sans-Serif; font-size: 16px; color: #333; }
+body.cke_editable { font-family: Roboto,Sans-Serif; color: #333; }
 
 /* Toolbar */
 #toolbar-user .logout { display: none; }
@@ -28,7 +28,7 @@ body.cke_editable { font-family: Roboto,Sans-Serif; font-size: 16px; color: #333
 
 /* Header */
 header { background: none; height: auto; border-bottom: none; }
-h2.block-title { font-size: 18px; margin-bottom: 10px; }
+h2.block-title { margin-bottom: 10px; }
 header#navbar{ background-color: #f5f5ed; }
 .navbar.container { max-width: 1170px; margin-top: 0; }
 #navfull .dropdown-menu { background-color: #ebead9; padding: 2px; font-size: 13px; }
@@ -37,7 +37,7 @@ header#navbar{ background-color: #f5f5ed; }
 #idfgRegionMap { margin: -7px 0 -5px; }
 
 /* Navigation Main Menu */
-#navfull .container { background: #ebead9; }
+#navfull { background: #ebead9; }
 #navfull a:hover { text-decoration: underline; }
 .navbar-default .navbar-brand { display: none; }
 .navbar-primary .navbar-nav a { color: #555; }
@@ -68,7 +68,7 @@ aside .navbar-collapse { padding-right: 0; padding-left: 0; }
 #page-header-context { display: none; }
 .navbar-context { margin-left: -15px; margin-right: -15px; color: #eae8d8; font-size: 13px; padding-left: 0; background-color: #999; }
 .navbar-context .navbar-toggle { float: none; }
-.navbar-context .brand h2 { font-size: 24px; margin-top: 12px; }
+.navbar-context .brand h2 { margin-top: 12px; }
 .navbar-context .brand { display: inline-block; }
 .navbar-context li { list-style: none; }
 .navbar-context a, .navbar-context button { color: #eae8d8; padding-bottom: 0; }
@@ -196,7 +196,7 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
   .navbar-context li { border-top: none;}
   .navbar-context .navbar-top { padding: 6px 6px 6px 15px; display: block; }
   .navbar-context { border-bottom: none;  padding-top: 80px;}
-  .navbar-context .brand h2 { padding: 0; font-family: Roboto, sans-serif; font-weight: bold; margin: 0; font-size: 13px; }
+  .navbar-context .brand h2 { padding: 0; font-family: Roboto, sans-serif; font-weight: bold; margin: 0; }
   .navbar-context a.brand:hover { text-decoration: none; }
   .navbar-context li a:hover { text-decoration: none; }
   header .header-context { display: block; }
