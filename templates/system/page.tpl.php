@@ -116,7 +116,7 @@
     </div>
   </div>
 </header>
-<div id="navfull container">
+<div id="navfull" class="container">
   <div class="row topnav">
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-primary navbar-collapse collapse">
