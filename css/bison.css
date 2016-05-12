@@ -32,7 +32,6 @@ h2.block-title { margin-bottom: 10px; }
 header#navbar{ background-color: #f5f5ed; }
 .navbar.container { max-width: 1170px; margin-top: 0; }
 #navfull .dropdown-menu { background-color: #ebead9; padding: 2px; font-size: 13px; }
-#navfull nav  { margin-left: 15px; }
 .region-branding { float: right; display: none; }
 #idfgRegionMap { margin: -7px 0 -5px; }
 
@@ -200,7 +199,6 @@ footer .col-md-2 { border-bottom: none; box-shadow: none; }
   .navbar-context a.brand:hover { text-decoration: none; }
   .navbar-context li a:hover { text-decoration: none; }
   header .header-context { display: block; }
-  #navfull nav  { margin-left: 0; }
   #navbar .logo img { height: auto; }
   .topnav .nav > li { border-top: none;}
   .topnav .navbar-collapse { border: none; }
