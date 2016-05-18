@@ -34,7 +34,7 @@ regions[page_bottom]      = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
-stylesheets[all][] = css/bison.css
+stylesheets[all][] = css/2.0/bison.css
 
 
 ; For information on choosing the desired method, please read the Drupal
