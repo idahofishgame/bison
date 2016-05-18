@@ -13,9 +13,9 @@
 .utilities, .utilities a { color: #fff; line-height: 30px; }
 .utilities .container { background: #333; }
 .utilities .nav > li > a { padding: 0 10px; }
-.utilities .nav > li > a:hover{ background:#000; border-radius: 0; }
-body.html { background:#3f4533; font-family: Roboto; }
-body.cke_editable { font-family: Roboto,Sans-Serif; color: #333; }
+.utilities .nav > li > a:hover{ background:none; border-radius: 0; }
+body.html { background:#3f4533; font-family: Roboto, sans-serif; font-weight: 300; }
+body.cke_editable { font-family: Roboto, sans-serif; color: #333; }
 
 /* Toolbar */
 #toolbar-user .logout { display: none; }
@@ -102,7 +102,7 @@ table { background-color: #fff; }
 .description { font-size: 80%; }
 .text-muted, .description, .submitted { color: #767676; }
 .posted-in a { color: #767676; margin-right: 5px; margin-left: 5px; font-size: 80%; }
-.posted-in div { line-height: 1.2em; display: inline; color: #767676; }
+.posted-in div { display: inline; color: #767676; }
 
 /* Attribution */
 .attribution:before { content: '\2014 \00A0'; }
