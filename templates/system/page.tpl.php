@@ -191,12 +191,12 @@
     <div>
 </div>
 <footer class="footer">
-  <div class="row">
+  <div class="container">
     <div class="col-xs-12">
       <?php print render($page['footer_top']); ?>
     <div>
   </div>
-  <div class="row">
+  <div class="container">
   <div>
   <div class="col-md-2 col-sm-4"><?php print render($page['footer_1']); ?></div>
   <div class="col-md-2 col-sm-4"><?php print render($page['footer_2']); ?></div>
@@ -208,7 +208,7 @@
   <div class="col-md-2 col-sm-4"><?php print render($page['footer_6']); ?></div>
   </div>
   </div>
-  <div class="row">
+  <div class="container">
     <div class="col-xs-12">
       <?php print render($page['footer']); ?>
     <div>
