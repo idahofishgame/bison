@@ -15,7 +15,7 @@
 .utilities .nav > li > a { padding: 0 10px; }
 .utilities .nav > li > a:hover{ background:#000; border-radius: 0; }
 body.html { background:#3f4533; font-family: Roboto; }
-body.cke_editable { font-family: Roboto,Sans-Serif; font-size: 16px; color: #333; }
+body.cke_editable { font-family: Roboto,Sans-Serif; color: #333; }
 
 /* Toolbar */
 #toolbar-user .logout { display: none; }
@@ -88,7 +88,7 @@ header .header-context { display: none; }
 /* Content */
 h1, h2, h3, h4, h5, h6, .brand, .dateblock { font-family: Georgia, Times, Serif; }
 .submitted { font-style: normal; }
-.main-container { background: #fff; font-size: 16px; padding-bottom: 45px; }
+.main-container { background: #fff; padding-bottom: 45px; }
 .margin-top { margin-top:20px; }
 .margin-bottom { margin-top:20px; }
 kbd { background-color: #f9f9f9; color: #999; }
