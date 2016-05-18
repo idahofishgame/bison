@@ -295,7 +295,7 @@ blockquote {
   .navbar-context li { border-top: none;}
   .navbar-context .navbar-top { padding: 6px 6px 6px 15px; display: block; }
   .navbar-context { border-bottom: none;  padding-top: 80px;}
-  .navbar-context .brand h2 { padding: 0; font-family: Roboto, sans-serif; font-weight: bold; margin: 0; font-size: 1.5em; }
+  .navbar-context .brand h2 { padding: 0; font-family: Roboto, sans-serif; font-weight: bold; margin: 0; font-size: 1.0em; }
   .navbar-context a.brand:hover { text-decoration: none; }
   .navbar-context li a:hover { text-decoration: none; }
   header .header-context { display: block; }
