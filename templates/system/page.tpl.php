@@ -214,7 +214,7 @@
     <div>
   </div>
 </footer><!--/row-->
-<div id="footer_bottom" class="row">
+<div id="footer_bottom">
   <div class="col-xs-12">
     <?php print render($page['footer_bottom']); ?>
   <div>
