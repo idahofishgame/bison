@@ -185,7 +185,7 @@
 
   </div>
 </div>
-<div id="footer_context" class="container">
+<div id="footer-context" class="container">
   <div class="row">
     <?php print render($page['footer_context']); ?>
     <div>
