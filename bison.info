@@ -34,8 +34,8 @@ regions[page_bottom]      = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
-stylesheets[all][] = css/2.0/bison.css
-
+stylesheets[all][] = 2.1/css/bison.css
+stylesheets[all][] = 2.1/css/overrides.css
 
 ; For information on choosing the desired method, please read the Drupal
 ; Bootstrap sub-theme "how-to" documentation:

@@ -1,0 +1,21 @@
+/* Override Drupal Bootstrap */
+.navbar { margin-bottom: 0; border-radius: 0; }
+#navbar-administration { font-family: sans-serif; }
+
+body.cke_editable { font-family: Roboto,Sans-Serif; color: #333; }
+
+/* Toolbar */
+#toolbar-user .logout { display: none; }
+
+h2.block-title { margin-bottom: 10px; }
+.end-date-wrapper label { display: block; }
+.view .date-nav-wrapper .date-prev { right: 76px; }
+
+/* Webform */
+.webform-component { margin-top: 15px; }
+.webform-container-inline label { margin-top: 0; font-weight: normal; display: inline-block; }
+.webform-container-inline input { display: inline-block; }
+.webform-component th { font-weight: normal; }
+label.option { font-weight: normal; }
+span.form-required, span.name-required-component-marker { color: #c7254e; }
+.form-pad-last .form-type-radio:last-of-type { padding-top: 10px;}
