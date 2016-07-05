@@ -35,7 +35,7 @@ regions[page_bottom]      = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 stylesheets[all][] = 2.1/css/bison.css
-stylesheets[all][] = 2.1/css/overrides.css
+stylesheets[all][] = 2.1/css/bison-drupal.css
 
 ; For information on choosing the desired method, please read the Drupal
 ; Bootstrap sub-theme "how-to" documentation:
@@ -75,6 +75,6 @@ scripts[] = 2.1/js/bison.js
 ; is overrides to Bootstrap theme settings. Copy them here from the base theme
 ; to override.
 
-; Information added by stupiddingo on 2015-05-08
-version = "7.x-1.0"
+; Information added by stupiddingo on 2016-07-05
+version = "7.x-2.1"
 core = "7.x"

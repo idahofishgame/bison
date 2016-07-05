@@ -19,3 +19,5 @@ h2.block-title { margin-bottom: 10px; }
 label.option { font-weight: normal; }
 span.form-required, span.name-required-component-marker { color: #c7254e; }
 .form-pad-last .form-type-radio:last-of-type { padding-top: 10px;}
+.webform-grid .radio, .webform-grid .checkbox { display: table-cell; text-align: center; width: 142px; }
+.webform-grid .radio input[type="radio"], .webform-grid .radio-inline input[type="radio"], .webform-grid .checkbox input[type="checkbox"], .webform-grid .checkbox-inline input[type="checkbox"] { float: none; margin: 0; }
