@@ -137,7 +137,7 @@
   </div>    
 <div class="main-container container">
 
-  <header role="banner" id="page-header">
+  <header role="banner" id="page-header-context">
     <?php if (!empty($site_slogan)): ?>
       <p class="lead"><?php print $site_slogan; ?></p>
     <?php endif; ?>
