@@ -138,13 +138,14 @@
 <div class="main-container container">
 
   <header role="banner" id="page-header-context">
+    <div class="container">
     <?php if (!empty($site_slogan)): ?>
       <p class="lead"><?php print $site_slogan; ?></p>
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
   </header> <!-- /#page-header -->
-
+    </div>
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>

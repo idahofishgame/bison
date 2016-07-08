@@ -101,7 +101,7 @@ blockquote { margin-left: 2px; padding-left: 10px; border-left: 4px solid #d3cfb
 /* Attribution */
 .attribution:before { content: '\2014 \00A0'; }
 .attribution { width: 100%; text-align: right; display: inline-block; color: #999; }
-.background-attribution { font-size: 0.7em; margin-top:-40px; color: #FFF; }
+.background-attribution { font-size: 0.7em; margin-top:-20px; color: #FFF; }
 .background-attribution a { color: #FFF; }
 
 /* Margin */
@@ -221,7 +221,7 @@ blockquote { font-size: 1.25em; line-height: 1.25; }
   .navbar-mobile { display: none !important; }
   .navbar-context { color: #555; }
   /* Header Context */
-  #page-header-context { display: block; margin-left: -15px; margin-right: -15px; margin-bottom: 20px; background: #999 center center no-repeat; background-size: cover; }
+  #page-header-context { display: block; margin-left: -15px; margin-right: -15px; background: #999 center center no-repeat; background-size: cover; }
   #page-header-context .region { background: rgba(153, 153, 153, 0.8); }
   #page-header-context.site-home { height: 250px; }
   #site-home-icon { margin-top: -120px; }
