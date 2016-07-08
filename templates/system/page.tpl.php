@@ -144,8 +144,8 @@
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
     </div>
+  </header> <!-- /#page-header -->
   <div class="row">
 
     <?php if (!empty($page['sidebar_first'])): ?>
