@@ -1,8 +1,5 @@
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+  font-family: 'Roboto'; font-style: normal; font-weight: 300; src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
 /* State.css  */
@@ -52,6 +49,7 @@ header#navbar{ background-color: #f5f5ed; }
 aside .navbar-collapse { padding-right: 0; padding-left: 0; }
 .region-sidebar-first { margin-bottom: 20px; }
 .region-sidebar-second section { margin-top: 30px; }
+.navbar { margin-bottom: 0; border-radius: 0; }
 .navbar.container { padding-top: 0; }
 #navbar .logo img { height: 44px; }
 .navbar-btn { margin-top: 4px; }
