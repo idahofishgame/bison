@@ -15,7 +15,7 @@ body.html { background:#3f4533; font-family: Roboto; }
 #idfg-site-search button { color: #999; position: relative; margin-left: -34px; margin-top: -3px; background: transparent; }
 #block-menu-menu-utilities ul.nav li { color: #c2c2c2;margin: 0; padding: 0; float: right; }
 #idfg-breadcrumb-context { color: #333; }
-#idfg-breadcrumb-context a:first-of-type { display: inline-block; width: 87px; height: 30px; padding: 0; margin: 0 0 -5px 0; text-indent: 200%; white-space: nowrap; overflow: hidden; background:no-repeat 0 5px url('https://idfg.idaho.gov/sites/all/themes/burbot/idaho.png') }
+#idfg-breadcrumb-context a:first-of-type { display: inline-block; width: 87px; height: 30px; padding: 0; margin: 0 0 -5px 0; text-indent: 200%; white-space: nowrap; overflow: hidden; background:no-repeat 0 5px url('https://idfg.idaho.gov/sites/all/themes/bison/idaho.png') }
 
 /* Header */
 header { background: none; height: auto; border-bottom: none; }
@@ -211,7 +211,7 @@ blockquote { font-size: 1.25em; line-height: 1.25; }
   .navbar-primary .navbar-nav > li a { border: 1px solid transparent; padding: 5px 4px; margin: 2px 3px; }
   .navbar-primary .navbar-nav > li a:hover, .navbar-primary .navbar-nav > li > ul > li a.menu-category:hover { background-color: transparent; color: #414634; }
   .navbar-primary .navbar-nav > li a:hover { border-color: #6a705a; background-color: #ebead9; border-bottom: none; z-index: 1001;}
-  .navbar-primary .navbar-nav:not(.secondary) > li.first a { border: none; width: 57px; height: 57px; top: -9px; margin-bottom: -20px; text-indent: 200%; z-index: 10; white-space: nowrap; margin-left: 29px; overflow: hidden; background:url('https://idfg.idaho.gov/apple-touch-icon.png'); }
+  .navbar-primary .navbar-nav:not(.secondary) > li.first a { border: none; width: 57px; height: 57px; top: -9px; margin-bottom: -20px; text-indent: 200%; z-index: 10; white-space: nowrap; margin-left: 29px; overflow: hidden; background:url('https://idfg.idaho.gov/sites/all/themes/bison/shield.png'); }
   .navbar-primary .navbar-nav:not(.secondary) > li.first a:hover { border: none; background-color: transparent; }
   #idfg-terms li { display: inline; padding-left: 14px;  }
   #idfg-terms li a { display: inline; }
