@@ -211,8 +211,8 @@ blockquote { font-size: 1.25em; line-height: 1.25; }
   .navbar-primary .navbar-nav > li a:hover { border-color: #6a705a; background-color: #ebead9; border-bottom: none; z-index: 1001;}
   .navbar-primary .navbar-nav:not(.secondary) > li.first a { border: none; width: 57px; height: 57px; top: -9px; margin-bottom: -20px; text-indent: 200%; z-index: 10; white-space: nowrap; margin-left: 29px; overflow: hidden; background:url('https://idfg.idaho.gov/sites/all/themes/bison/shield.png'); }
   .navbar-primary .navbar-nav:not(.secondary) > li.first a:hover { border: none; background-color: transparent; }
-  #idfg-terms li { display: inline; padding-left: 14px;  }
-  #idfg-terms li a { display: inline; }
+  #idfg-terms li { display: inline; }
+  #idfg-terms li a { display: inline; white-space: nowrap; }
   #idfg-terms li a:hover { background: transparent; }
   .navbar-mobile { display: none !important; }
   .navbar-context { color: #555; }
