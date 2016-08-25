@@ -1,17 +1,14 @@
 (function($) {
-  /*
-  	This javascript patch is to redirect active traffic to a notification
-    of online sales being halted due to concerns over security.
+  /**
+  *	 Redirect active traffic to a notification of online sales halt.
   */
   $(document).ready(function() {
-
-    var search_url = "id.outdoorcentral.us";
-    var replace_url = "https://idfg.idaho.gov/press/online-sales-suspended";
-
+    var s = "id.outdoorcentral.us";
+    var r = "https://idfg.idaho.gov/press/online-sales-suspended";
     $("a").each(function() {
-      var href = $(this).attr('href');
-      if (href.indexOf(search_url) !== -1) {
-        $(this).attr("href", replace_url);
+      var h = $(this).attr('href');
+      if (h !== undefined && h.indexOf(s) !== -1) {
+        $(this).attr("href", r);
       }
     });
   });
