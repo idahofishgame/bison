@@ -9,7 +9,6 @@
       var h = $(this).attr('href');
       if (typeof h != 'undefined' && h.indexOf(s) !== -1) {
         $(this).attr("href", r);
-        console.log(h);
       }
     });
   });
