@@ -49,6 +49,7 @@ stylesheets[all][] = 2.1/css/bison-drupal.css
 ; ;; Scripts
 ; ;;;;;;;;;;;;;;;;;;;;;
 scripts[] = 2.1/js/bison.js
+scripts[] = 2.1/js/global.js
 
 ; scripts[] = 'bootstrap/js/affix.js'
 ; scripts[] = 'bootstrap/js/alert.js'
