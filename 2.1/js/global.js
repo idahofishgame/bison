@@ -7,8 +7,9 @@
     var r = "https://idfg.idaho.gov/press/online-sales-suspended";
     $("a").each(function() {
       var h = $(this).attr('href');
-      if (h !== undefined && h.indexOf(s) !== -1) {
+      if (typeof h != 'undefined' && h.indexOf(s) !== -1) {
         $(this).attr("href", r);
+        console.log(h);
       }
     });
   });
