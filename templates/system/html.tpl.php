@@ -66,7 +66,7 @@
   <?php print $styles; ?>
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
-  <script src="https://idfg.idaho.gov/sites/all/themes/bison/js/html5shiv-printshiv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
 </head>
