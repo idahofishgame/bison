@@ -1,14 +1,16 @@
 /* Override Drupal Bootstrap */
-#navbar-administration { font-family: sans-serif; }
 
+/* Editor */
 body.cke_editable { font-family: Roboto,Sans-Serif; color: #333; }
 
 /* Toolbar */
 #toolbar-user .logout { display: none; }
 
+/* Content */
 h2.block-title { margin-bottom: 10px; }
 .end-date-wrapper label { display: block; }
 .view .date-nav-wrapper .date-prev { right: 76px; }
+.admin-views-view .views-exposed-form .form-text { width: 100%; }
 
 /* Webform */
 .webform-component { margin-top: 15px; }
