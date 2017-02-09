@@ -111,7 +111,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <span class="accounts-login-link"><a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/accounts/user" title="My Account"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></span>
+      <?php if ($logged_in): ?>
+        <span class="accounts-login-link"><a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/accounts/user?returnurl=<?php print url($_get['q'])?>" title="My Account"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></span>
+      <?php else: ?>
+        <span class="accounts-login-link"><a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/accounts/user/login?returnurl=<?php print url($_get['q'])?>" title="Login"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></span>
+      <?php endif; ?>
       <a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/search" title="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
     </div>
   </div>
