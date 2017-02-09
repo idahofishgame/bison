@@ -111,8 +111,8 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <span class="accounts-login-link"><a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/accounts/user" title="My Account"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></span>
       <a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/search" title="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
-
     </div>
   </div>
 </header>
