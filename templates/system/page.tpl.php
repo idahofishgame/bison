@@ -187,31 +187,31 @@
   <div class="row">
     <?php print render($page['footer_context']); ?>
   </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="col-xs-12">
+        <?php print render($page['footer_top']); ?>
+      </div>
+    </div>
+    <div class="container">
+      <div>
+        <div class="col-md-2 col-sm-4"><?php print render($page['footer_1']); ?></div>
+        <div class="col-md-2 col-sm-4"><?php print render($page['footer_2']); ?></div>
+        <div class="col-md-2 col-sm-4"><?php print render($page['footer_3']); ?></div>
+      </div>
+      <div>
+        <div class="col-md-2 col-sm-4"><?php print render($page['footer_4']); ?></div>
+        <div class="col-md-2 col-sm-4"><?php print render($page['footer_5']); ?></div>
+        <div class="col-md-2 col-sm-4"><?php print render($page['footer_6']); ?></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-xs-12">
+        <?php print render($page['footer']); ?>
+      </div>
+    </div>
+  </footer><!--/row-->
 </div>
-<footer class="footer">
-  <div class="container">
-    <div class="col-xs-12">
-      <?php print render($page['footer_top']); ?>
-    </div>
-  </div>
-  <div class="container">
-    <div>
-      <div class="col-md-2 col-sm-4"><?php print render($page['footer_1']); ?></div>
-      <div class="col-md-2 col-sm-4"><?php print render($page['footer_2']); ?></div>
-      <div class="col-md-2 col-sm-4"><?php print render($page['footer_3']); ?></div>
-    </div>
-    <div>
-      <div class="col-md-2 col-sm-4"><?php print render($page['footer_4']); ?></div>
-      <div class="col-md-2 col-sm-4"><?php print render($page['footer_5']); ?></div>
-      <div class="col-md-2 col-sm-4"><?php print render($page['footer_6']); ?></div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="col-xs-12">
-      <?php print render($page['footer']); ?>
-    </div>
-  </div>
-</footer><!--/row-->
 <div id="footer_bottom">
   <div class="col-xs-12">
     <?php print render($page['footer_bottom']); ?>
