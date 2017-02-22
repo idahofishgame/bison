@@ -76,18 +76,18 @@
 
 <div class="utilities hidden-xs">
   <?php if (!empty($page['utilities_first']) || !empty($page['utilities_second'])): ?>
-  <div class="container">
-     <?php if (!empty($page['utilities_first'])): ?>
-     <div class="tagline col-sm-6">
-     <?php print render($page['utilities_first']); ?>
+    <div class="container">
+      <?php if (!empty($page['utilities_first'])): ?>
+        <div class="tagline col-sm-6">
+          <?php print render($page['utilities_first']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if (!empty($page['utilities_second'])): ?>
+        <div class="top_nav col-xs-12 col-sm-6">
+          <?php print render($page['utilities_second']); ?>
+        </div>
+      <?php endif; ?>
     </div>
-    <?php endif; ?>
-    <?php if (!empty($page['utilities_second'])): ?>
-    <div class="top_nav col-xs-12 col-sm-6">
-      <?php print render($page['utilities_second']); ?>
-    </div>
-    <?php endif; ?>
-  </div>
   <?php endif; ?>
 </div>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
@@ -95,15 +95,13 @@
     <?php print render($page['branding']); ?>
     <div class="navbar-header">
       <?php if ($logo): ?>
-      <a class="logo navbar-btn pull-left" href="https://idfg.idaho.gov/" title="<?php print t('Home'); ?>">
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-      </a>
+        <a class="logo navbar-btn pull-left" href="https://idfg.idaho.gov/" title="<?php print t('Home'); ?>">
+          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+        </a>
       <?php endif; ?>
-
       <?php if (!empty($site_name)): ?>
-      <a class="name navbar-brand" href="https://idfg.idaho.gov/" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
+        <a class="name navbar-brand" href="https://idfg.idaho.gov/" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
       <?php endif; ?>
-
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary">
         <span class="sr-only">Toggle navigation</span>
@@ -123,41 +121,38 @@
 <div id="navfull" class="container">
   <div class="row topnav">
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-primary navbar-collapse collapse">
-        <nav role="navigation">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
-        </nav>
-      </div>
-    <?php endif; ?><!-- /.navbar-collapse -->
+    <div class="navbar-primary navbar-collapse collapse">
+      <nav role="navigation">
+        <?php if (!empty($primary_nav)): ?>
+          <?php print render($primary_nav); ?>
+        <?php endif; ?>
+        <?php if (!empty($secondary_nav)): ?>
+          <?php print render($secondary_nav); ?>
+        <?php endif; ?>
+        <?php if (!empty($page['navigation'])): ?>
+          <?php print render($page['navigation']); ?>
+        <?php endif; ?>
+      </nav>
     </div>
+    <?php endif; ?><!-- /.navbar-collapse -->
   </div>
+</div>
 <div class="main-container container">
-
   <header role="banner" id="page-header-context">
     <div class="container">
-    <?php if (!empty($site_slogan)): ?>
-      <p class="lead"><?php print $site_slogan; ?></p>
-    <?php endif; ?>
+      <?php if (!empty($site_slogan)): ?>
+        <p class="lead"><?php print $site_slogan; ?></p>
+      <?php endif; ?>
 
-    <?php print render($page['header']); ?>
+      <?php print render($page['header']); ?>
     </div>
   </header> <!-- /#page-header -->
   <div class="row">
-
     <?php if (!empty($page['sidebar_first'])): ?>
       <aside class="col-sm-2" role="complementary">
         <?php print render($page['sidebar_first']); ?>
       </aside>  <!-- /#sidebar-first -->
     <?php endif; ?>
-
     <section id="main-section" <?php print $content_column_class; ?>>
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlighted jumbotron"><?php print render($page['highlighted']); ?></div>
@@ -181,46 +176,44 @@
       <?php endif; ?>
       <?php print render($page['content']); ?>
     </section>
-
     <?php if (!empty($page['sidebar_second'])): ?>
       <aside class="col-sm-3" role="complementary">
         <?php print render($page['sidebar_second']); ?>
       </aside>  <!-- /#sidebar-second -->
     <?php endif; ?>
-
   </div>
 </div>
 <div id="footer-context" class="container">
   <div class="row">
     <?php print render($page['footer_context']); ?>
-    <div>
+  </div>
 </div>
 <footer class="footer">
   <div class="container">
     <div class="col-xs-12">
       <?php print render($page['footer_top']); ?>
-    <div>
+    </div>
   </div>
   <div class="container">
-  <div>
-  <div class="col-md-2 col-sm-4"><?php print render($page['footer_1']); ?></div>
-  <div class="col-md-2 col-sm-4"><?php print render($page['footer_2']); ?></div>
-  <div class="col-md-2 col-sm-4"><?php print render($page['footer_3']); ?></div>
-  </div>
-  <div>
-  <div class="col-md-2 col-sm-4"><?php print render($page['footer_4']); ?></div>
-  <div class="col-md-2 col-sm-4"><?php print render($page['footer_5']); ?></div>
-  <div class="col-md-2 col-sm-4"><?php print render($page['footer_6']); ?></div>
-  </div>
+    <div>
+      <div class="col-md-2 col-sm-4"><?php print render($page['footer_1']); ?></div>
+      <div class="col-md-2 col-sm-4"><?php print render($page['footer_2']); ?></div>
+      <div class="col-md-2 col-sm-4"><?php print render($page['footer_3']); ?></div>
+    </div>
+    <div>
+      <div class="col-md-2 col-sm-4"><?php print render($page['footer_4']); ?></div>
+      <div class="col-md-2 col-sm-4"><?php print render($page['footer_5']); ?></div>
+      <div class="col-md-2 col-sm-4"><?php print render($page['footer_6']); ?></div>
+    </div>
   </div>
   <div class="container">
     <div class="col-xs-12">
       <?php print render($page['footer']); ?>
-    <div>
+    </div>
   </div>
 </footer><!--/row-->
 <div id="footer_bottom">
   <div class="col-xs-12">
     <?php print render($page['footer_bottom']); ?>
-  <div>
+  </div>
 </div>
