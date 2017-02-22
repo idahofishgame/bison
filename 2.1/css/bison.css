@@ -43,7 +43,8 @@ header#navbar{ background-color: #f5f5ed; }
 .navbar-search { float: right; padding-top: 14px; color: #555; }
 .navbar-nav .open .dropdown-menu > li > a, .navbar-nav .open .dropdown-menu .dropdown-header { padding: 0 3px 0 6px; }
 .navbar-primary .dropdown-menu li.first a.menu-category {  font-size: 1.2em; background: transparent; }
-.topnav .nav > li { border-top:1px solid #777; }
+.dropdown-menu { min-width: 300px; }
+.topnav .nav > li.dropdown { border-top:1px solid #777; }
 .topnav .navbar-collapse { border-width: 2px medium 5px; border-style: solid none; border-color: #777; }
 .navbar-nav { margin-top: 0; margin-bottom: 0; }
 aside .navbar-collapse { padding-right: 0; padding-left: 0; }
@@ -203,14 +204,14 @@ blockquote { font-size: 1.25em; line-height: 1.25; }
   .navbar-context li a:hover { text-decoration: none; }
   header .header-context { display: block; }
   #navbar { display: none; }
-  .topnav .nav > li { border-top: none;}
+  .topnav .nav > li.dropdown { border-color:transparent; }
   .topnav .navbar-collapse { border: none; }
   .navbar-collapse ul.nav li.dropdown:hover > ul.dropdown-menu { display: block; }
   .navbar-primary { font-size: 0.875em; }
   .navbar-nav > li > .dropdown-menu { margin-left: 3px; margin-top: -3px; border-color: #6a705a; }
-  .navbar-nav > li.last > .dropdown-menu { margin-left: -190px; }
-  .navbar-nav > li:nth-of-type(9) > .dropdown-menu { margin-left: -80px; }
-  .navbar-nav > li:nth-of-type(8) > .dropdown-menu { margin-left: -60px; }
+  .navbar-nav > li.last > .dropdown-menu { margin-left: -206px; }
+  .navbar-nav > li:nth-of-type(9) > .dropdown-menu { margin-left: -112px; }
+  .navbar-nav > li:nth-of-type(8) > .dropdown-menu { margin-left: -50px; }
   .navbar-primary .navbar-nav > li a { border: 1px solid transparent; padding: 5px 4px; margin: 2px 3px; }
   .navbar-primary .navbar-nav > li a:hover, .navbar-primary .navbar-nav > li > ul > li a.menu-category:hover { background-color: transparent; color: #414634; }
   .navbar-primary .navbar-nav > li a:hover { border-color: #6a705a; background-color: #ebead9; border-bottom: none; z-index: 1001;}
