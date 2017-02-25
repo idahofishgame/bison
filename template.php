@@ -81,7 +81,7 @@ function bison_form_element_label($variables) {
   $output = theme_form_element_label($variables);
   $element = $variables['element'];
   if (isset($element['#description_top'])) {
-    $output .= '<div class="text-muted"><small>' . $element['#description_top'] . "</small></div>\n";
+    $output .= '<small class="text-muted">' . $element['#description_top'] . "</small>\n";
   }
   return $output;
 }
