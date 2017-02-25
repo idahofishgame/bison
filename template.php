@@ -14,9 +14,13 @@ function bison_menu_link__main_menu(array $variables) {
   $element = $variables['element'];
   $sub_menu = '';
 
-  $title = $element['#title'];
-  $href = $element['#href'];
   $options = !empty($element['#localized_options']) ? $element['#localized_options'] : array();
+
+  // Filter the title if the "html" is not set, otherwise l() will automatically
+  // sanitize using check_plain(), so no need to call that here.
+  $title = empty($options['html']) ? filter_xss_admin($element['#title']) : $element['#title'];
+
+  $href = $element['#href'];
   $attributes = !empty($element['#attributes']) ? $element['#attributes'] : array();
 
   if ($element['#below']) {
@@ -50,12 +54,6 @@ function bison_menu_link__main_menu(array $variables) {
   // Add wrapper menu for depth.
   if ($element['#original_link']['depth'] == 2) {
     $options['attributes']['class'][] = 'menu-category';
-  }
-
-  // Filter the title if the "html" is set, otherwise l() will automatically
-  // sanitize using check_plain(), so no need to call that here.
-  if (!empty($options['html'])) {
-    $title = _bootstrap_filter_xss($title);
   }
 
   return '<li' . drupal_attributes($attributes) . '>' . l($title, $href, $options) . $sub_menu . "</li>\n";
@@ -168,7 +166,7 @@ function bison_status_messages($variables) {
 
     if (!empty($status_heading[$type])) {
       if (!module_exists('devel')) {
-        $output .= '<h4 class="element-invisible">' . _bootstrap_filter_xss($status_heading[$type]) . "</h4>\n";
+        $output .= '<h4 class="element-invisible">' . filter_xss_admin($status_heading[$type]) . "</h4>\n";
       }
       else {
         $output .= '<h4 class="element-invisible">' . $status_heading[$type] . "</h4>\n";
@@ -179,7 +177,7 @@ function bison_status_messages($variables) {
       $output .= " <ul>\n";
       foreach ($messages as $message) {
         if (!module_exists('devel')) {
-          $output .= '  <li>' . _bootstrap_filter_xss($message) . "</li>\n";
+          $output .= '  <li>' . filter_xss_admin($message) . "</li>\n";
         }
         else {
           $output .= ' <li>' . $message . "</li>\n";
@@ -189,7 +187,7 @@ function bison_status_messages($variables) {
     }
     else {
       if (!module_exists('devel')) {
-        $output .= _bootstrap_filter_xss($messages[0]);
+        $output .= filter_xss_admin($messages[0]);
       } else {
         $output .= $messages[0];
       }
