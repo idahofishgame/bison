@@ -16,9 +16,13 @@ function bison_menu_link__main_menu(array $variables) {
 
   $options = !empty($element['#localized_options']) ? $element['#localized_options'] : array();
 
-  // Filter the title if the "html" is not set, otherwise l() will automatically
-  // sanitize using check_plain(), so no need to call that here.
-  $title = empty($options['html']) ? filter_xss_admin($element['#title']) : $element['#title'];
+  // Check plain title if "html" is not set, otherwise, filter for XSS attacks.
+  $title = empty($options['html']) ? check_plain($element['#title']) : filter_xss_admin($element['#title']);
+
+  // Ensure "html" is now enabled so l() doesn't double encode. This is now
+  // safe to do since both check_plain() and filter_xss_admin() encode HTML
+  // entities. See: https://www.drupal.org/node/2854978
+  $options['html'] = TRUE;
 
   $href = $element['#href'];
   $attributes = !empty($element['#attributes']) ? $element['#attributes'] : array();
