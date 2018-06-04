@@ -98,6 +98,7 @@ table { background-color: #fff; }
 blockquote { margin-left: 2px; padding-left: 10px; border-left: 4px solid #d3cfb9; color: #999; }
 .posted-in div { line-height: 1.2em; display: inline; color: #767676; }
 .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"], .radio input[type="radio"], .radio-inline input[type="radio"] {  margin-left: 0; position: relative; }
+.alert { border-radius: 0; }
 
 /* Attribution */
 .attribution:before { content: '\2014 \00A0'; }
