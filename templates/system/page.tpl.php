@@ -110,7 +110,7 @@
         <span class="icon-bar"></span>
       </button>
       <?php if ($logged_in): ?>
-        <span class="accounts-login-link"><a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/accounts/user?returnurl=<?php print url($_GET['q'])?>" title="My Account"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="hidden"> My Account</span></a></span>
+        <span class="accounts-login-link"><a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/accounts/user" title="My Account"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="hidden"> My Account</span></a></span>
       <?php endif; ?>
       <a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="/buy" title="Buy a license, tag or permit to hunt or fish."><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span><span class="hidden"> Buy a License</span></a>
       <a class="hidden-lg btn btn-lg navbar-search navbar-mobile" href="https://idfg.idaho.gov/search" title="Search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span><span class="hidden"> Search</span></a>
